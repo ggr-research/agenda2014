@@ -1,0 +1,85 @@
+\documentclass{llncs} % , times
+
+\usepackage{amssymb, amsmath, graphicx, ltxtable, longtable, tabularx, url, ragged2e, xspace, verbatim, fancybox,tikz}
+\usepackage{scalefnt}
+\usepackage{relsize}
+\usepackage{hyperref}
+%\usepackage{paralist}
+%\usepackage{listings}
+
+\newcommand{\ggr}[1]{\textcolor{magenta}{comment Gerd: \textit{#1}}}
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\begin{document}
+\title{Research Agenda --- Meeting 1 (July 24)}
+ 
+
+\maketitle
+
+\begin{abstract}
+This document gives a short summary of the first meeting on
+July 24, 2013.
+The main topics are: research activity and 
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Status Report}
+
+I have decided to focus on \emph{software architectures} and especially
+for \emph{Future Internet} systems.
+The work was inspired by the LoFIP and FInest architectures.
+
+\subsection{Achievements until now}
+
+\begin{itemize}
+	\item Basic definitions and terminology of software architectures (and views).
+	\item Learning and comparing the LoFIP and FInest architectures.
+	   \begin{itemize}
+			 \item \textbf{Observations:} The LoFIP ``Leitstand'' architecture
+			       and the FInest Core architecture do not show dedicated
+						 constructs regarding the ``Future Internet''. 
+						 IoT and IoS are (mainly) incorporated in the back end and front end.
+		 \end{itemize}
+\end{itemize}
+
+
+\subsection{Next steps (until July 30)}
+
+\begin{itemize}
+	\item Look into the LoFIP components \emph{MONITOR} and \emph{ANALYZE} and
+	  identify special aspects (or requirements) when data input, data output
+		 and communication rely on IoT and IoS.
+		For instance, typical aspects are uncertainty, delay, unavailability of services
+		or inappropriate connections.
+	\item Investigate the influence (or whether there is an influence at all) of user interactions
+	   to the MAPE-K reference model. (MAPE-K, as a reference model for self-adaptive systems,
+		 is adapted as a kind of blueprint for the ``Leitstand'' architecture in LoFIP.)
+\end{itemize}
+
+
+\section{Long-term Goal}
+
+The focus of my research is on software architecture.
+How does my background fit into this?
+\begin{itemize}
+	\item \textbf{Model-driven engineering:} Modeling, model transformation, alignment and mapping
+	\item \textbf{Business process management:} From the architecture to the execution.
+	   Two dimensions: process and architecture (structure) and they have to be ``synchronized'',
+		  leading to problems like adaptation, exception handling, ad-hoc processes, monitoring, etc.
+	\item \textbf{Knowledge representation:} Enrich architectures by knowledge bases (ontologies)
+	  and apply reasoning for analyzing, planning and prioritizing actions.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+%\bibliography{bib-architecture}
+
+\end{document}
